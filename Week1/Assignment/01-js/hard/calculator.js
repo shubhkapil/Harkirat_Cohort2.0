@@ -83,16 +83,16 @@ function isOperator(s)
   return false;
 }
 
-function printStack(s)
-{
-  if(s.isEmpty())
-    return
-  let a = s.top();
-  s.pop();
-  printStack(s)
-  console.log(a);
-  s.push(a);
-}
+// function printStack(s)
+// {
+//   if(s.isEmpty())
+//     return
+//   let a = s.top();
+//   s.pop();
+//   printStack(s)
+//   console.log(a);
+//   s.push(a);
+// }
 
 //Coversion Infix->Postfix (for expression evaluation)
 function infixToPostfix(str)
@@ -170,6 +170,9 @@ function infixToPostfix(str)
   }
   return v;
 }
+
+
+//Calculator Class:
 
 class Calculator {
 
