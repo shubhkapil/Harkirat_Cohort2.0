@@ -26,6 +26,8 @@ function findLastIndexOf(str, target) {
 }
 findLastIndexOf("Hello World World", "World");
 
+
+//substr is avoided, as substr(a,b) a: start index, b: length of req. string
 // slice
 function getSlice(str, start, end) {
   console.log("Original String:", str);
