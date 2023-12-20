@@ -5,4 +5,12 @@
 
 let a = 0
 
-setInterval(function(){console.log(a++)},1000)
+let interval = setInterval( () => 
+    {
+        console.log(a++);
+
+        if(a>=10)   
+            clearInterval(interval);
+    }
+
+,1000)
