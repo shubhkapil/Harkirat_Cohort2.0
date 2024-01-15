@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+    async function solve()
+    {
+        const p = document.getElementById("input1").value;
+        const r = document.getElementById("input2").value;
+        const t = document.getElementById("input3").value;
+
+        const res = await fetch("https://sum-server.100xdevs.com/interest?principal="+p+"&rate="+r+"&time="+t);
+        const ans = await res.text();
+        document.getElementById("output").innerHTML = ans;
+    }
+</script>
+<body>
+    
+    <input id="input1" type="text" placeholder="Principal Amount"></input><br><br>
+    <input id="input2" type="text" placeholder="Rate"></input><br><br>
+    <input id="input3" type="text" placeholder="Time"></input><br><br>
+
+    <button id="output" onclick="solve()">Calculate Interest</button><br><br>
+</body>
+</html>
