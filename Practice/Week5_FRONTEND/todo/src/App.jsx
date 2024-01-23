@@ -41,19 +41,19 @@ function App() {
 
         {todos.map(function(todo)
         {
-          return <Todo title = {todo.title} description = {todo.description}/>
+          return <div title = {todo.title} description = {todo.description}/>
         })}
       </div>
   
   )
 }
 
-function Todo(props)
-{
-  return <div>
-    <h1>{props.title}</h1>
-    <h2>{props.description}</h2>
-  </div>
-}
+// function Todo(props)
+// {
+//   return <div>
+//     <h1>{props.title}</h1>
+//     <h2>{props.description}</h2>
+//   </div>
+// }
 
 export default App
